@@ -7,16 +7,14 @@ package com.Porfolio.maurop.Entity;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+
 
 /**
  *
  * @author Perez Mauro
  */
 @Entity
-@Getter
-@Setter
+
 @Table(name = "proyectos")
 public class Proyectos implements Serializable {
     @Id
@@ -41,4 +39,73 @@ public class Proyectos implements Serializable {
         this.proyecto = proyecto;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getGithub() {
+        return github;
+    }
+
+    public void setGithub(String github) {
+        this.github = github;
+    }
+
+    public String getProyecto() {
+        return proyecto;
+    }
+
+    public void setProyecto(String proyecto) {
+        this.proyecto = proyecto;
+    }
+
+ @Override
+    public String toString(){
+        return "Proyectos {" +
+                "id=" + id + '\'' +
+                "nombre=" + nombre + '\'' +
+                "descripcion=" + descripcion + '\'' +
+                "fecha=" + fecha + '\'' +
+                "img=" + img + '\'' +
+                "github=" + github + '\'' +
+                "proyecto=" + proyecto +  '\'' +
+                '}';
+    }
 }
+

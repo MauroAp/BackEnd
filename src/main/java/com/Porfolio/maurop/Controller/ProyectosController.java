@@ -8,6 +8,7 @@ package com.Porfolio.maurop.Controller;
 import com.Porfolio.maurop.Entity.Proyectos;
 import com.Porfolio.maurop.Service.IProyectosService;
 import java.util.List;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -26,7 +27,7 @@ import org.springframework.http.HttpStatus;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-
+@Transactional
 @RequestMapping("/proyectos")
 public class ProyectosController {
 

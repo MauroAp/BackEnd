@@ -8,6 +8,7 @@ package com.Porfolio.maurop.Controller;
 import com.Porfolio.maurop.Entity.Experiencia;
 import com.Porfolio.maurop.Service.IExperienciaService;
 import java.util.List;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-
+@Transactional
 @RequestMapping("/experiencia")
 public class ExperienciaController {
 

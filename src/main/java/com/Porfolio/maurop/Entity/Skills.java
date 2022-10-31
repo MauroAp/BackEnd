@@ -6,8 +6,7 @@
 package com.Porfolio.maurop.Entity;
 
 import javax.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+
 
 /**
  *
@@ -15,8 +14,8 @@ import lombok.Setter;
  */
 
 @Entity
-@Getter
-@Setter
+
+
 public class Skills {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -34,4 +33,47 @@ public class Skills {
         this.img = img;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getSkill() {
+        return skill;
+    }
+
+    public void setSkill(String skill) {
+        this.skill = skill;
+    }
+
+    public Integer getPorcentaje() {
+        return porcentaje;
+    }
+
+    public void setPorcentaje(Integer porcentaje) {
+        this.porcentaje = porcentaje;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+ @Override
+    public String toString() {
+        return "Skills{" +
+                "id=" + id +
+                ", skill='" + skill + '\'' +
+                ", porcentaje=" + porcentaje +
+                ", img='" + img + '\'' +
+                '}';
+    }
 }
+
+
