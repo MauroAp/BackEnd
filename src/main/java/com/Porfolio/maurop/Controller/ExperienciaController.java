@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
  * @author Perez Mauro
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontmauro4.web.app/")
 @Transactional
 @RequestMapping("/experiencia")
 public class ExperienciaController {
